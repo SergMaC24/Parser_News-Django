@@ -23,7 +23,25 @@
                   {% for news in hn_list %}
                   <h5> - {{ news.title }}</h5>
                   <hr>
-                  <a class="btn btn-primary" href="{{ news.url }}">Read</a>
+                  <a class="btn btn-primary" href="{{ news.url }}">Читать</a>
+                  {% endfor %}
+                  <br>
+          </div>
+          <div class="col-4">
+                  <h3 class="text-centre">Silicon Valley News</h3>
+                  {% for news in silicon_list %}
+                  <h5> - {{ news.title }}</h5>
+                  <hr>
+                  <a class="btn btn-primary" href="{{ news.url }}">Читать</a>
+                  {% endfor %}
+                  <br>
+          </div>
+          <div class="col-4">
+                  <h3 class="text-centre">Hacker News</h3>
+                  {% for news in hn_list %}
+                  <h5> - {{ news.title }}</h5>
+                  <hr>
+                  <a class="btn btn-primary" href="{{ news.url }}">Читать</a>
                   {% endfor %}
                   <br>
           </div>
